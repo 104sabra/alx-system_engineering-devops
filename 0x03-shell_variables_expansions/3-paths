@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(printf $PATH | grep -o ":/" | wc -w)
+echo $(printf $PATH | tr ":" "\n" | wc -w)
